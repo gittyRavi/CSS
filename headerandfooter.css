@@ -12,18 +12,23 @@ html,body
 #header
 {
 	height: 50px;
-	width: 100%;
+	width: device-width;		/* previous input width: 100% */
 	padding: 10px;
 	text-align: center;
 	background-color: #26a69a;
 	color: #fff;
+	font-size:relative;
+}
+#header>button
+{
+	font-size:1.5vw;	/* variable view-port size of font with font-size:1.2vw; */
 }
 #content
 {
 	width: 100%;
 	color: #26a69a;
-	padding-top: 100px;
-	padding-bottom: 70px;
+	padding-top: 100px;	/*100*/
+	padding-bottom: 70px;	/*70*/
 	text-align: center;
 }
 #footer
@@ -35,5 +40,18 @@ html,body
 	color: #fff;
 	text-align: center;
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
+}
+button
+{
+	background:green;border:2px;position:relative;border-radius:25%;align:center;width:device-width;
+	
+}
+button:hover
+{
+	background:skyblue;border:0px;position:relative;
+}
+div>#header:hover
+{
+	font-family:lucidia;font-weight:bold;color:green;
 }
